@@ -1,0 +1,48 @@
+{
+	"description": "Pi extension that gates Node package manager commands to the repo's manager",
+	"devDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"@types/node": "^24.0.0",
+		"typescript": "^5.9.0"
+	},
+	"engines": {
+		"node": ">=22.6"
+	},
+	"files": [
+		"index.ts"
+	],
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"package-manager",
+		"guard",
+		"yarn",
+		"npm",
+		"pnpm",
+		"bun"
+	],
+	"license": "MIT",
+	"name": "@clementprevot/pi-package-manager-guard",
+	"packageManager": "yarn@4.9.2",
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/clementprevot/pi-package-manager-guard.git"
+	},
+	"scripts": {
+		"test": "node --test test/*.test.ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"type": "module",
+	"version": "0.1.0"
+}
