@@ -23,7 +23,6 @@
 	],
 	"license": "MIT",
 	"name": "@clementprevot/pi-package-manager-guard",
-	"packageManager": "yarn@4.9.2",
 	"peerDependencies": {
 		"@earendil-works/pi-coding-agent": "*"
 	},
